@@ -24,7 +24,7 @@ module InitialAvatar
 
     def color
       return opts[:color] if opts[:color]
-      index = text.ord % InitialAvatar.configuration.colors.length
+      index = (text.ord + opts[:seed]) % InitialAvatar.configuration.colors.length
       InitialAvatar.configuration.colors[index]
     end
 

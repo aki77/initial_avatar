@@ -1,12 +1,13 @@
 module InitialAvatar
   class Configuration
-    OPTIONS = %i[text_color size font_weight font_family].freeze
+    OPTIONS = %i[text_color size font_weight font_family seed].freeze
 
     attr_accessor :colors
     attr_accessor :text_color
     attr_accessor :size
     attr_accessor :font_weight
     attr_accessor :font_family
+    attr_accessor :seed
 
     def initialize
       @colors = %w[
@@ -18,6 +19,7 @@ module InitialAvatar
       @size = 100
       @font_weight = 400
       @font_family = 'HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica, Arial,Lucida Grande, sans-serif'
+      @seed = 0
     end
 
     def default_options
