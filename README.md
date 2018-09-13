@@ -61,6 +61,7 @@ InitialAvatar.configure do |config|
 #   config.size = 100
 #   config.font_weight = 400
 #   config.font_family = 'HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica, Arial,Lucida Grande, sans-serif'
+#   config.seed = 0
 end
 ```
 
