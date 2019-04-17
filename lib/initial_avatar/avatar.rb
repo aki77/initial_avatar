@@ -10,7 +10,7 @@ module InitialAvatar
 
     def svg_tag
       <<~SVG
-        <svg xmlns="http://www.w3.org/2000/svg" pointer-events="none" width="#{opts[:size]}" height="#{opts[:size]}" style="background-color: #{color}; width: #{opts[:size]}px; height: #{opts[:size]}px;">
+        <svg xmlns="http://www.w3.org/2000/svg" pointer-events="none" width="#{opts[:size]}" height="#{opts[:size]}" style="background-color: #{color};">
         <text text-anchor="middle" y="50%" x="50%" dy="0.35em" pointer-events="auto" fill="#{opts[:text_color]}" font-family="#{opts[:font_family]}" style="font-weight: #{opts[:font_weight]}; font-size: #{font_size}px;">#{text}</text>
         </svg>
       SVG
