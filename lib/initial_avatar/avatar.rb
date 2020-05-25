@@ -1,3 +1,5 @@
+require 'base64'
+
 module InitialAvatar
   class Avatar
     attr_reader :text
